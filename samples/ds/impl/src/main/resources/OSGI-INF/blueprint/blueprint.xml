@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" default-activation="eager">
+	<bean id="host" class="org.apache.cxf.dosgi.samples.ds.impl.AdderServiceImpl" />
+
+	<service ref="host" interface="org.apache.cxf.dosgi.samples.ds.AdderService">
+		<service-properties>
+			<entry key="service.exported.interfaces" value="*" />
+			<entry key="service.exported.configs" value="org.apache.cxf.ws" />
+			<entry key="org.apache.cxf.ws.address" value="http://localhost:9090/adder" />
+		</service-properties>
+	</service>
+</blueprint>

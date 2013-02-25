@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" default-activation="eager">
+	<bean id="consumer" class="org.apache.cxf.dosgi.samples.ds.consumer.AdderConsumer" />
+	<service ref="consumer" auto-export="all-classes" depends-on="host" />
+	<reference id="host" interface="org.apache.cxf.dosgi.samples.ds.AdderService" availability="mandatory">
+		<reference-listener bind-method="bindAdder" unbind-method="unbindAdder">
+			<ref component-id="consumer" />
+		</reference-listener>
+	</reference>
+</blueprint>
