@@ -34,12 +34,8 @@
       <relativePath>../parent/pom.xml</relativePath>  
     </parent>
 
-    <modules>
-      <module>greeter</module>
-      <module>greeter_rest</module>
-      <module>spring_dm</module>
+    <modules> 
       <module>ds</module>
       <module>discovery</module>
-      <module>security_filter</module>
     </modules> 
 </project>
