@@ -3,10 +3,9 @@ bluCXF-DOSGi
 An implementation of the Apache CXF-DOSGi "AdderService" example using Aries Blueprint activation
 
 config.ini
-==================================================================================================================
+----------------------------------------------------------------------------------------------------------------
 
 #OSGi configuration
-#------------------
 osgi.framework=file\:plugins/org.eclipse.osgi_3.8.1.v20120830-144521.jar
 osgi.bundles=\
 reference\:file\:org.eclipse.core.runtime_3.8.0.v20120521-2346.jar@start,\
@@ -81,5 +80,3 @@ osgi.noShutdown=true
 osgi.console.enable.builtin=true
 eclipse.ignoreApp=true
 org.ops4j.pax.web.session.timeout=30
-
-==================================================================================================================
