@@ -5,7 +5,6 @@ An implementation of the Apache CXF-DOSGi "AdderService" example using Aries Blu
 config.ini
 ----------------------------------------------------------------------------------------------------------------
 
-#OSGi configuration
 osgi.framework=file\:plugins/org.eclipse.osgi_3.8.1.v20120830-144521.jar
 osgi.bundles=\
 reference\:file\:org.eclipse.core.runtime_3.8.0.v20120521-2346.jar@start,\
