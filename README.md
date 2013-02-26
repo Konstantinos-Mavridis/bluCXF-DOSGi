@@ -2,12 +2,13 @@ bluCXF-DOSGi
 ============
 An implementation of the Apache CXF-DOSGi "AdderService" example using Aries Blueprint activation
 
-required packages
+equinox-based deployment - required packages
 ----------------------------------------------------------------------------------------------------------------
 equinox-SDK-3.8.1.zip
+
 cxf-dosgi-ri-multibundle-distribution-1.4.0-dir.zip
 
-config.ini
+equinox-based deployment - config.ini
 ----------------------------------------------------------------------------------------------------------------
 osgi.framework=file\:plugins/org.eclipse.osgi_3.8.1.v20120830-144521.jar
 osgi.bundles=\
@@ -79,7 +80,6 @@ reference\:file\:cxf-dosgi-ri-multibundle/cxf-dosgi-ri-discovery-local-1.4.0.jar
 reference\:file\:cxf-dosgi-ri-samples-blueprint/cxf-dosgi-ri-samples-blueprint-interface-1.5-SNAPSHOT.jar@start,\
 reference\:file\:cxf-dosgi-ri-samples-blueprint/cxf-dosgi-ri-samples-blueprint-impl-1.5-SNAPSHOT.jar@start
 osgi.noShutdown=true
-
 osgi.console.enable.builtin=true
 eclipse.ignoreApp=true
 org.ops4j.pax.web.session.timeout=30
@@ -94,7 +94,7 @@ with:
 
    reference\:file\:cxf-dosgi-ri-samples-blueprint/cxf-dosgi-ri-samples-blueprint-client-1.5-SNAPSHOT.jar@start
    
-equinox start-up commands
+equinox-based deployment - start-up commands
 -------------------------
 Service-side:
 
