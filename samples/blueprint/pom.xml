@@ -2,20 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.cxf.dosgi.samples</groupId>
-    <artifactId>cxf-dosgi-ri-samples</artifactId>
-    <version>1.5-SNAPSHOT</version>
+    <artifactId>cxf-dosgi-ri-bundles-blueprint-parent</artifactId>
     <packaging>pom</packaging>
-    <name>Distributed OSGI RI Sample Bundles</name>
-    <url>http://cxf.apache.org/</url>
+    <name>Distributed-OSGI Blueprint Sample</name>
+    <version>1.5-SNAPSHOT</version>
 
     <parent>
       <groupId>org.apache.cxf.dosgi</groupId>
       <artifactId>cxf-dosgi-ri-parent</artifactId>
       <version>1.5-SNAPSHOT</version>
-      <relativePath>../parent/pom.xml</relativePath>  
+      <relativePath>../../parent/pom.xml</relativePath>
     </parent>
-
-    <modules>
-      <module>blueprint</module>
+    
+    <modules>    
+      <module>interface</module>
+      <module>impl</module>
+      <module>client</module>
     </modules> 
+
 </project>
