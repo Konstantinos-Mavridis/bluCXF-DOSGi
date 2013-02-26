@@ -94,12 +94,12 @@ with:
 
    reference\:file\:cxf-dosgi-ri-samples-blueprint/cxf-dosgi-ri-samples-blueprint-client-1.5-SNAPSHOT.jar@start
    
-Equinox start-up commands
+equinox start-up commands
 -------------------------
-Service-side
+Service-side:
 
    java -classpath %EQUINOX_HOME%\plugins\org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar org.eclipse.equinox.launcher.Main -configuration %EQUINOX_HOME%\configuration-cxf-dosgi-ri-samples-blueprint -consoleLog -console
    
-Client-side
+Client-side:
 
    java -classpath %EQUINOX_HOME%\plugins\org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar org.eclipse.equinox.launcher.Main -configuration %EQUINOX_HOME%\configuration-cxf-dosgi-ri-samples-blueprint-client -consoleLog -console
